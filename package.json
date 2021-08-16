@@ -4,7 +4,8 @@
   "description": "mortgage calculator",
   "main": "server/index.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "client": "client"
   },
   "scripts": {
     "test": "mocha test/**/*.js",
