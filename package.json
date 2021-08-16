@@ -1,0 +1,43 @@
+{
+  "name": "mortgage-calculator-mern",
+  "version": "1.0.0",
+  "description": "mortgage calculator",
+  "main": "server/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js",
+    "dev-server": "nodemon server/index.js",
+    "server": "node server/index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "mortgage",
+    "calculator",
+    "mern",
+    "react",
+    "express",
+    "javascript",
+    "node"
+  ],
+  "author": "brandon-kyle-bailey",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.0",
+    "mocha": "^9.0.3",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "memory-cache": "^0.2.0",
+    "react-vis": "^1.11.7"
+  }
+}
