@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container > * {
+    margin: 1rem;
+}
+
+.mortgage-form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #312F2F;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    transition: scale 200ms;
+}
+
+.mortgage-form-container:hover {
+    scale: 1.05;
+}
+
+.mortgage-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    background-color: #646464;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: scale 100ms;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input[type=number] {
+  appearance: textfield;
+}
+
+.submit {
+    background-color: #84DCCF;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #312F2F;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+}
+
+input:hover {
+    scale: 1.02;
+}
+
+.input:hover::placeholder {
+    color: #84DCCF;
+}
